@@ -47,17 +47,15 @@ So, let's add to our example above. Inside of your `<Sticky />` tag, wrap the ch
 ```js
 <StickyContainer>
   <Sticky>
-     {({ style }) => {
-        return (
-          <h1 style={style}>
-            {"I'm Sticky"}
-          </h1>
-        )
-      }
-    }
+    {({ style }) => {
+      return (
+        <h1 style={style}>
+          {"I'm Sticky"}
+        </h1>
+      )
+    }}
   </Sticky>
-</StickyContainer>
-```
+</StickyContainer>```
 
 The `Sticky`'s child function will be called when events occur in the parent `StickyContainer`,
 and will serve as the callback to apply your own logic and customizations, with sane `style` attributes
